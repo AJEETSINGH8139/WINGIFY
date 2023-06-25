@@ -1,6 +1,6 @@
 describe("Home Page", () => {
   before(() => {
-    cy.visit("login.html");
+    cy.visit("index.html");
     cy.get("#username").type("validUsername");
     cy.get("#password").type("validPassword");
     cy.get("#log-in").click();
