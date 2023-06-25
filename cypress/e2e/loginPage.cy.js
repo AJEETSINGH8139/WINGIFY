@@ -3,7 +3,7 @@ describe("Login Page", () => {
     cy.visit("login.html");
     cy.get("#username").type("validUsername");
     cy.get("#password").type("validPassword");
-    cy.get("#loginButton").click();
+    cy.get("#log-in").click();
     // Add assertions to verify successful login
   });
 
@@ -11,7 +11,7 @@ describe("Login Page", () => {
     cy.visit("login.html");
     cy.get("#username").type("invalidUsername");
     cy.get("#password").type("invalidPassword");
-    cy.get("#loginButton").click();
+    cy.get("#log-in").click();
     // Add assertions to verify error message
   });
 });
